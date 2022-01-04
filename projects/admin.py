@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Project
 
-# Register your models here.
+# Shows Project model in admin page
+admin.site.register(Project)
