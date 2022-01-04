@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Myblogs
 
-# Register your models here.
+# Shows blog model in admin page
+admin.site.register(Myblogs)
