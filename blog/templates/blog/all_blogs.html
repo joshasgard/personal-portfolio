@@ -18,17 +18,19 @@
 <div class = "container text-center">
 {% for blog in myblogs %}
 <br>
-<h2>{{ blog.title }} </h2>
-<!--
-<p>
-{{ project.description }}
-</p>
-<img src="{{ project.image.url }}"> 
+<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }} </h2> </a>
+<img src="{{ blog.image.url }}" > 
+
 <br>
-{% if project.url %}
-<a href= "{{ project.url }}"> Link</a>
+<p>
+{{ blog.description }}
+<h3> {{ blog.date }} </h3>
+</p>
+
+<br>
+{% if blog.url %}
+<a href= "{{ blog.url }}" class="btn btn-danger"> Link</a>
 {% endif %}
--->
 
 
 {% endfor %}
