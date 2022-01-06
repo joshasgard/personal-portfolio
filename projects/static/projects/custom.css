@@ -1,9 +1,9 @@
 .navbar-nav .nav-link {
-    color: rgba(0,0,0,1) !important;
+    color: rgb(253, 255, 254) !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(231, 16, 16, 0.5) !important;
+    color: rgba(108, 145, 226, 0.5) !important;
 }
 
 body {
@@ -11,12 +11,12 @@ body {
 }
 
 #blogtitle {
-    font-size: 20rem;
+    font-size: 3rem;
 }
 
 @media (min-width: 992px) {
     #hometext {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #blogdetailtitle {
         font-size: 5rem;

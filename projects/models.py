@@ -6,7 +6,8 @@ class Project(models.Model):
     description = models.CharField(max_length=250)
     image = models.ImageField(upload_to = 'projects/images/')
     url = models.URLField(blank=True)
-
+    tools = models.CharField(max_length=250, blank=True)
+    blog_url = models.URLField(blank=True)
 
     
     def __str__(self):

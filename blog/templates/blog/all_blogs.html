@@ -1,30 +1,30 @@
 
 {% extends 'projects/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
-    <div class = "container text-center"> 
-      <h1 class = ""> Idowu's Blogposts </h1>
-</div>
-<div class = "container text-center">
+<h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
+
+
 {% for blog in myblogs %}
-<br>
-<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }} </h2> </a>
-<img src="{{ blog.image.url }}" > 
-
-<br>
-<p>
-{{ blog.description|striptags|truncatechars:100 }} <br>
-{{ blog.date|date:'M d Y'|upper}}
-</p>
-
-<br>
-{% if blog.url %}
-<a href= "{{ blog.url }}" class="btn btn-danger"> Link</a>
-{% endif %}
-
-
-{% endfor %}
+<div class = "row justify-content-center my-3">
+  <div class = "col-md-10">
+    <a href="{% url 'blog:detail' blog.id %}">
+      <h2>{{ blog.title }} </h2> 
+    </a>
+    <img src="{{ blog.image.url }}" class="img-fluid mb-2"> 
+    <h5 class="text-muted">{{ blog.date|date:'M d Y'|upper}}</h5>
+    <h4>{{ blog.description|striptags|truncatechars:100 }}</h4>
+  {% if blog.url %}
+  <a href= "{{ blog.url }}" class="btn">
+    <img src="{% static 'projects/medium.png' %}" width="20" height="20" class="d-inline-block align-top" alt="Medium">
+</a>
+    {% endif %}  
+  </div>
 </div>
+{% endfor %}
+
 
 {% endblock %}
