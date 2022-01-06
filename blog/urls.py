@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-app_name = 'blog'
+app_name = 'blog' #for linking directly from the all_blogs page 
 
 urlpatterns = [
 

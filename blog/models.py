@@ -10,5 +10,6 @@ class Myblogs(models.Model):
     date = models.DateField(default = date.today)
 
 
-
+    def __str__(self):
+        return self.title
 
