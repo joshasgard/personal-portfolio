@@ -11,9 +11,16 @@
     <a href= "{{ blog.url }}" class="btn">
         <img src="{% static 'projects/medium.png' %}" width="20" height="20" class="d-inline-block align-top" alt="Medium">
     </a>
-    {% endif %}
-<img src="{{ blog.image.url }}" class="img-fluid mb-2"> 
-
-{{ blog.description|safe }}
-
+    {% endif %}<br>
+<div class="container text-center">
+    <img src="{{ blog.image.url }}" class="img-fluid mb-2"> 
+</div>
+<div class="container">
+    {{ blog.description|safe }}
+</div>
+<br>
+<div class="container">
+    <p>Continue on <a href="{{ blog.url }}" class="btn btn-info">Medium</a> </p>
+</div>
+<hr>
 {% endblock %}
