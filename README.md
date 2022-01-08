@@ -1,6 +1,11 @@
-# Personal-portfolio
-
-## Building a personal Django Portfolio Website
+# Portfolio Website
+<p align="center">
+<a href="idowuodesanmi.herokuapp.com">
+<img src="https://github.com/joshasgard/personal-portfolio/blob/master/media/website.PNG"></a>
+  </p>
+  
+## Overview
+My personal portfolio <a href="idowuodesanmi.herokuapp.com"> website </a>
 
 ## Libraries
 - Python 3.8x
@@ -12,4 +17,4 @@
 
 ## Credits
 - <a href= "https://github.com/joshasgard"> Author </a> <br>
-- <a href= "Udemy.com"> Udemy </a>
+- <a href= "https://www.udemy.com/course/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap/learn/lecture/17873062#overview"> Udemy </a>
