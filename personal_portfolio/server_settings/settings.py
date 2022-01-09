@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u@p-dle8uv=gco-v*t3=o*$@zoj&(pq+qygbv)xifulnup6&pk'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -125,9 +125,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dqaru3h1q',
-    'API_KEY': '811965318482963',
-    'API_SECRET': '6db-It6BlxJSpcLgiXmYLag_ilE',
+    'CLOUD_NAME': '',
+    'API_KEY': '',
+    'API_SECRET': '',
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
