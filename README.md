@@ -14,6 +14,7 @@ My personal portfolio <a href="idowuodesanmi.herokuapp.com"> website </a>
 - CSS
 - Bootstrap 4.6X
 - Pillow
+- Cloudinary API for media file storage
 
 ## Credits
 - <a href= "https://github.com/joshasgard"> Author </a> <br>
