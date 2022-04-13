@@ -1,6 +1,6 @@
 # Portfolio Website
 <p align="center">
-<a href="idowuodesanmi.herokuapp.com">
+<a href="https://idowuodesanmi.herokuapp.com">
 <img src="https://github.com/joshasgard/personal-portfolio/blob/master/media/website.PNG"></a>
   </p>
   
